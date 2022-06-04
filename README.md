@@ -354,7 +354,7 @@
 <summary>😎NohGyuSeon github page😎</summary>
 <div markdown="1">       
  
-[나의 깃헙 페이지](https://github.com/NohGyuSeon/github_chosun.git "NGS (new_generation_software__") 
+[나의 깃헙 페이지](https://github.com/NohGyuSeon/github_chosun.git "NGS (new_generation_software__)") 
  
 </div>
 </details>
