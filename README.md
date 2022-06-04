@@ -216,6 +216,7 @@
       + command : CPU 사용률 순 정렬
  <br>
  <br>
+ 
 > jobs로 알 수 있는 세션의 상태 값
 >> Running : BSD 계열에서 나타나는 항목으로 프로세스 소유자의 이름
 >> 
@@ -327,7 +328,7 @@
       +     → i/a → let @<변수명>='ctrl+r ctrl+r <마지막 사용 매크로 문자>' → wq! 또는 x  
  <br>
  <br>
-[매크로를 활용하는 VimGolf 문제]<img width="1280" alt="VimGolf 5f1063aa8361810006e73210" src="https://user-images.githubusercontent.com/97013643/172022847-b6d28f8b-1aeb-476e-81ab-854b7d073195.png">
+[매크로를 활용하는 VimGolf 문제]<img width="1280" alt="vimgolf" src="https://user-images.githubusercontent.com/97013643/172024602-b0de6c84-70a7-4b9b-85f9-a18ace495641.png">
 
 ***Keystrokes를 기준으로 VimGolf 문제에 대한 설명이며 굵게 표시된 부분들이 매크로를 활용하는 명령행이다***
  <br>
@@ -348,9 +349,9 @@
 <details>
 <summary>😎NohGyuSeon github page😎</summary>
 <div markdown="1">       
-
+ 
 [나의 깃헙 페이지](https://github.com/NohGyuSeon/github_chosun.git"NGS (new_generation_software__") 
-
+ 
 </div>
-</details>   
+</details>
  
