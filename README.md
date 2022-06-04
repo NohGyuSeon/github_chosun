@@ -283,8 +283,7 @@
 * SIGKILL(9)은 개발자가 프로그램을 개발할 때 핸들링을 할 수 없다
 * SIGKILL(9)을 이용해 종료할 경우 개발자가 구현한 종료 함수가 호출되지 않고 즉시 프로세스가 종료되어 데이터가 유실되거나 리소스가 제대로 닫히지 않는 문제가 발생할 수도 있다
 * SIGTERM(15)나 SIGINT(2)와 같이 종료를 의미하는 signal을 권장하며 제대로 된 프로그램은 보통 cleanup 코드를 수행하고 종료하게 된다
- <br>
- <br>
+
 
 ##### 주요 시그널에 대한 테이블
 
@@ -300,9 +299,8 @@
 |20|SIGCHLD(TSTP)|정지 (CTRL + Z)|
 
 ---
- <br>
- <br>
- 
+
+
 **vim 에디터에서 매크로 사용방법에 대하여 조사**
 
 * 매크로(macro) 사용법
@@ -347,7 +345,7 @@
 <summary>😎NohGyuSeon github page😎</summary>
 <div markdown="1">       
 
-[나의 깃헙 페이지](https://www.youtube.com/watch?v=xs92kqU2YWg&list=PLRx0vPvlEmdDySO3wDqMYGKMVH4Qa4QhR "NGS (new_generation_software__") 
+[나의 깃헙 페이지](https://github.com/NohGyuSeon/github_chosun.git"NGS (new_generation_software__") 
 
 </div>
 </details>   
