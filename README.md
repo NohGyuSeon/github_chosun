@@ -1,11 +1,11 @@
-# FF3163 github_chosun 🌴 
-<span style="color:#FF3163">github_chosun</span>
+# github_chosun 🌴 
+
 ### 오픈소스SW개론 과제
-<span style="background-color:#F7DDBE">오픈소스SW개론 과제</span>
+
 ---
 
-1. 리눅스 명령어 : top, ps, jobs, kill 명령어 조사하기
-2. vim 에디터에서 매크로 사용방법에 대하여 조사하기 (q, @)
+<span style="color:yellow">1. 리눅스 명령어 : top, ps, jobs, kill 명령어 조사하기.</span>
+<span style="color:yellow">2. vim 에디터에서 매크로 사용방법에 대하여 조사하기 (q, @)</span>
 
 ---
 
@@ -44,7 +44,7 @@
 
 [top 명령어 실행 화면]<img width="1280" alt="top을 통한 실시간 CPU 사용률 체크" src="https://user-images.githubusercontent.com/97013643/172012188-278f6d21-56e5-4a36-8c02-463bd71c4209.png">
 
-* 위쪽 화면을 통해서 현재 시스템의 상태를 알 수 있고, 아래쪽 화면을 통해서 현재 실행중인 프로세스 현황을 볼 수 있다
+<u>위쪽 화면을 통해서 현재 시스템의 상태를 알 수 있고, 아래쪽 화면을 통해서 현재 실행중인 프로세스 현황을 볼 수 있다</u>
 
 > Top 정보 시스템 내용
 >> 23:10:01 : 현재 서버의 시간
@@ -162,7 +162,7 @@
 
 [ps 명령어 실행 화면]<img width="1280" alt="ps 명령어에 -u와 -ef 옵션을 준 화면" src="https://user-images.githubusercontent.com/97013643/172012171-65297a93-b3da-41c1-a4d0-77d1c48b681c.png">
 
-* -u 옵션을 통해 현재 사용자의 프로세스 정보와 -ef 옵션을 통해 모든 프로세스를 풀 포맷으로 확인할 수 있다
+<u>-u 옵션을 통해 현재 사용자의 프로세스 정보와 -ef 옵션을 통해 모든 프로세스를 풀 포맷으로 확인할 수 있다</u>
 
 > ps 정보
 >> USER : BSD 계열에서 나타나는 항목으로 프로세스 소유자의 이름
@@ -236,7 +236,7 @@
 
 [kill 명령어 실행 화면]<img width="1280" alt="kill 명령어에 -l 옵션을 준 화면" src="https://user-images.githubusercontent.com/97013643/172019845-4a4b3370-26b1-4952-8efa-fcc850f6e5db.png">
 
-* -l 옵션을 통해서 사용할 수 있는 시그널을 확인할 수 있다
+<u>-l 옵션을 통해서 사용할 수 있는 시그널을 확인할 수 있다</u>
 
 ##### 시그널 종류에 대한 테이블
 
@@ -293,19 +293,25 @@
 * 매크로(macro) 사용법
    - 매크로 저장하기
       + q<저장할 매크로 문자>
-      + 동작수행 → q
-      + qa → 매크로 작성 → q 
+      + 동작수행 
+      +     → q
+      + qa → 매크로 작성 
+      +     → q 
    - 매크로 사용하기
-      + 특정 문자에 저장한 매크로 실행 → @<저장한 매크로 문자>
-      + 매크로 반복 실행 반복횟수 → @<저장한 매크로 문자>
-      + 마지막에 수행한 매크로 실행 → @@
+      + 특정 문자에 저장한 매크로 실행 
+      +     → @<저장한 매크로 문자>
+      + 매크로 반복 실행 반복횟수 
+      +     → @<저장한 매크로 문자>
+      + 마지막에 수행한 매크로 실행 
+      +     → @@
    - 파일에 저장하기 (재사용)
       + 현재 편집중 내용을 저장 후 ~/vimrc를 열기 (:e 또는 :r) 
-          → :W → :e~/.vimrc
+      +     → :W → :e~/.vimrc 
       + insert 모드 전환 후 저장할 매크로 이름을 변수로 하여 사용한 매크로 저장하기 
-          → i/a → let @<변수명>='ctrl+r ctrl+r <마지막 사용 매크로 문자>' → wq! 또는 x 
-          
-[매크로를 활용하는 VimGolf 문제]<VimGolf 5f1063aa8361810006e73210" src="https://user-images.githubusercontent.com/97013643/172019845-4a4b3370-26b1-4952-8efa-fcc850f6e5db.png">
+      +     → i/a → let @<변수명>='ctrl+r ctrl+r <마지막 사용 매크로 문자>' → wq! 또는 x  
+ <br>
+ <br>
+[매크로를 활용하는 VimGolf 문제]<img width="1280" alt="VimGolf 5f1063aa8361810006e73210" src="https://user-images.githubusercontent.com/97013643/172022847-b6d28f8b-1aeb-476e-81ab-854b7d073195.png">
 
 1 ~ 2. 4G 입력 -> 4번째 라인으로 이동
 **3 ~ 4. qa 입력 -> 매크로를 기록하고 a로 alias를 지정**
@@ -319,7 +325,13 @@
 **21 ~ 22. @a 입력 -> 기록한 매크로 a 실행**
 23 ~ 24. ZZ 입력 -> 현재 파일을 저장 후 종료
    
-* Keystrokes를 기준으로 VimGolf 문제에 대한 설명이며 굵게 표시된 부분들이 매크로를 활용하는 명령행이다   
+<u>Keystrokes를 기준으로 VimGolf 문제에 대한 설명이며 굵게 표시된 부분들이 매크로를 활용하는 명령행이다</u>
    
-   
-   
+<details>
+<summary>😎NohGyuSeon github page😎</summary>
+<div markdown="1">       
+
+[나의 깃헙 페이지](https://www.youtube.com/watch?v=xs92kqU2YWg&list=PLRx0vPvlEmdDySO3wDqMYGKMVH4Qa4QhR "NGS (new_generation_software__") 
+
+</div>
+</details>   
