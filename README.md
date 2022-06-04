@@ -246,9 +246,9 @@
 [kill 명령어 실행 화면]<img width="1280" alt="kill 명령어에 -l 옵션을 준 화면" src="https://user-images.githubusercontent.com/97013643/172019845-4a4b3370-26b1-4952-8efa-fcc850f6e5db.png">
 
 ***-l 옵션을 통해서 사용할 수 있는 시그널을 확인할 수 있다***
+
  <br>
  <br>
- 
 ##### 시그널 종류에 대한 테이블
 
 |No|Name|Default Action|Description|
@@ -283,6 +283,7 @@
 * SIGKILL(9)은 개발자가 프로그램을 개발할 때 핸들링을 할 수 없다
 * SIGKILL(9)을 이용해 종료할 경우 개발자가 구현한 종료 함수가 호출되지 않고 즉시 프로세스가 종료되어 데이터가 유실되거나 리소스가 제대로 닫히지 않는 문제가 발생할 수도 있다
 * SIGTERM(15)나 SIGINT(2)와 같이 종료를 의미하는 signal을 권장하며 제대로 된 프로그램은 보통 cleanup 코드를 수행하고 종료하게 된다
+
 <br>
 ##### 주요 시그널에 대한 테이블
 
