@@ -214,7 +214,8 @@
       + -n : pid 순 정렬(descending)
       + -p : pid 순 정렬(ascending)
       + command : CPU 사용률 순 정렬
-
+ <br>
+ <br>
 > jobs로 알 수 있는 세션의 상태 값
 >> Running : BSD 계열에서 나타나는 항목으로 프로세스 소유자의 이름
 >> 
@@ -329,7 +330,8 @@
 [매크로를 활용하는 VimGolf 문제]<img width="1280" alt="VimGolf 5f1063aa8361810006e73210" src="https://user-images.githubusercontent.com/97013643/172022847-b6d28f8b-1aeb-476e-81ab-854b7d073195.png">
 
 ***Keystrokes를 기준으로 VimGolf 문제에 대한 설명이며 굵게 표시된 부분들이 매크로를 활용하는 명령행이다***
-
+ <br>
+ <br>
 * 1 ~ 2. 4G 입력 -> 4번째 라인으로 이동
 * **3 ~ 4. qa 입력 -> 매크로를 기록하고 a로 alias를 지정**
 * 5 ~ 6. yw 입력 -> 커서 위치에서 오른쪽 한 단어 복사
