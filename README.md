@@ -4,13 +4,14 @@
 
 ---
 
-<span style="color:yellow">1. 리눅스 명령어 : top, ps, jobs, kill 명령어 조사하기.</span>
-<span style="color:yellow">2. vim 에디터에서 매크로 사용방법에 대하여 조사하기 (q, @)</span>
+1. 리눅스 명령어 : top, ps, jobs, kill 명령어 조사하기
+2. vim 에디터에서 매크로 사용방법에 대하여 조사하기
 
 ---
 
 **리눅스 명령어 : top, ps, jobs, kill 명령어 조사**
-
+ <br>
+ <br>
 ##### 리눅스 명령어에 대한 간략한 설명 테이블 (top, ps, jobs, kill)
 
 |명령어|내용|설명|
@@ -41,11 +42,13 @@
       + m : 메모리 사용량 정보 on/off
       + t : CPU 사용률 정보 on/off
       + c : 사용명령어/사용명령어full on/off -> 명령어 추적시 용이
-
+ <br>
+ <br>
 [top 명령어 실행 화면]<img width="1280" alt="top을 통한 실시간 CPU 사용률 체크" src="https://user-images.githubusercontent.com/97013643/172012188-278f6d21-56e5-4a36-8c02-463bd71c4209.png">
 
-<u>위쪽 화면을 통해서 현재 시스템의 상태를 알 수 있고, 아래쪽 화면을 통해서 현재 실행중인 프로세스 현황을 볼 수 있다</u>
-
+***위쪽 화면을 통해서 현재 시스템의 상태를 알 수 있고, 아래쪽 화면을 통해서 현재 실행중인 프로세스 현황을 볼 수 있다***
+ <br>
+ <br>
 > Top 정보 시스템 내용
 >> 23:10:01 : 현재 서버의 시간
 >> 
@@ -56,8 +59,8 @@
 >> load average : 현재 시스템이 얼마나 일을 하고 있는지 1분, 5분, 15분 단위로 실행/대기 중인 프로세스 수를 나타내고 있음.
 >> 
 >> Tasks : 프로세스 개수
-
-
+ <br>
+ <br>
 > CPU
 >> %us : 유저레벨에서 사용하고 있는 CPU 비중
 >> 
@@ -68,8 +71,8 @@
 >> %wa : 시스템이 I/O 요청을 처리하지 못한 상태에서의 CPU idle 상태인 비중
 >> 
 >> MiB Mem, Swap : 각 메모리의 상태 정보 
-
-
+ <br>
+ <br>
 > 프로세스 상태 정보
 >> PID : 프로세스 ID (PID)
 >> 
@@ -92,8 +95,8 @@
 >> %MEM : 프로세스가 사용하는 메모리의 사용율
 >> 
 >> COMMAND : 실행된 명령어
-
-
+ <br>
+ <br>
 > Top 명령어 옵션(top 실행중 사용가능)
 >> shift + p : CPU 사용률이 높은 프로세스 순서대로 표시
 >> 
@@ -159,11 +162,13 @@
       + -u : 특정 사용자의 프로세스 정보를 확인할 때 사용 (사용자를 지정하지 않으면 현재 사용자를 기준으로 한다)
       + x (BSD 계열) : 데몬 프로세스처럼 터미널에 종속되지 않는 프로세스를 출력
       + -x : 로그인 상태에 있는 동안 아직 완료되지 않은 프로세서들을 보여준다
-
+ <br>
+ <br>
 [ps 명령어 실행 화면]<img width="1280" alt="ps 명령어에 -u와 -ef 옵션을 준 화면" src="https://user-images.githubusercontent.com/97013643/172012171-65297a93-b3da-41c1-a4d0-77d1c48b681c.png">
 
-<u>-u 옵션을 통해 현재 사용자의 프로세스 정보와 -ef 옵션을 통해 모든 프로세스를 풀 포맷으로 확인할 수 있다</u>
-
+***-u 옵션을 통해 현재 사용자의 프로세스 정보와 -ef 옵션을 통해 모든 프로세스를 풀 포맷으로 확인할 수 있다***
+ <br>
+ <br>
 > ps 정보
 >> USER : BSD 계열에서 나타나는 항목으로 프로세스 소유자의 이름
 >> 
@@ -220,8 +225,11 @@
 >> Stopped : 부모 프로세스 ID
 >> 
 >> Stopped(SIGTSTP) : SIGTSTP 신호가 작업을 일시 중단
+>> 
 >> Stopped(SIGSTOP) : SIGSTOP 신호가 작업을 일시 중단
+>> 
 >> Stopped(SIGTTIN) : SIGTTIN 신호가 작업을 일시 중단
+>> 
 >> Stopped(SIGTTOU) : SIGTTOU 신호가 작업을 일시 중단
 
 --- 
@@ -233,11 +241,13 @@
 * 프로세스를 안전하게 종료하기 위해서는 "kill -9 pid", "kill -SIGKILL pid" 형태로 프로세스 강제 종료를 권장하지 않는다 (데이터 유실 위험)
 * 일반적으로 해당 Process에 문제가 있어서 다시 시작하고자 할 때에는 SIGHUP, SIGTERM, SIGKILL의 순서로 시도하는 것이 권장된다
 * kill 명령어는 내부적으로  kill()이란 시스템 콜을 사용하여 구현하고, 프로세스 식별자(PID)로 지시한 프로세스와 프로세스 그룹 식별자(PGID)로 지시한 프로세스 그룹에 시그널을 보낸다
-
+ <br>
+ <br>
 [kill 명령어 실행 화면]<img width="1280" alt="kill 명령어에 -l 옵션을 준 화면" src="https://user-images.githubusercontent.com/97013643/172019845-4a4b3370-26b1-4952-8efa-fcc850f6e5db.png">
 
 <u>-l 옵션을 통해서 사용할 수 있는 시그널을 확인할 수 있다</u>
-
+ <br>
+ <br>
 ##### 시그널 종류에 대한 테이블
 
 |No|Name|Default Action|Description|
@@ -272,7 +282,8 @@
 * SIGKILL(9)은 개발자가 프로그램을 개발할 때 핸들링을 할 수 없다
 * SIGKILL(9)을 이용해 종료할 경우 개발자가 구현한 종료 함수가 호출되지 않고 즉시 프로세스가 종료되어 데이터가 유실되거나 리소스가 제대로 닫히지 않는 문제가 발생할 수도 있다
 * SIGTERM(15)나 SIGINT(2)와 같이 종료를 의미하는 signal을 권장하며 제대로 된 프로그램은 보통 cleanup 코드를 수행하고 종료하게 된다
-
+ <br>
+ <br>
 ##### 주요 시그널에 대한 테이블
 
 |시그널 번호|시그널|설명|
@@ -287,7 +298,8 @@
 |20|SIGCHLD(TSTP)|정지 (CTRL + Z)|
 
 ---
-
+ <br>
+ <br>
 **vim 에디터에서 매크로 사용방법에 대하여 조사**
 
 * 매크로(macro) 사용법
@@ -325,8 +337,9 @@
 **21 ~ 22. @a 입력 -> 기록한 매크로 a 실행**
 23 ~ 24. ZZ 입력 -> 현재 파일을 저장 후 종료
    
-<u>Keystrokes를 기준으로 VimGolf 문제에 대한 설명이며 굵게 표시된 부분들이 매크로를 활용하는 명령행이다</u>
-   
+***Keystrokes를 기준으로 VimGolf 문제에 대한 설명이며 굵게 표시된 부분들이 매크로를 활용하는 명령행이다***
+ <br>
+ <br>
 <details>
 <summary>😎NohGyuSeon github page😎</summary>
 <div markdown="1">       
@@ -335,3 +348,6 @@
 
 </div>
 </details>   
+   
+                                                                 [Default Button](#){: .btn .btn--primary }
+   
