@@ -332,7 +332,7 @@
       +     → i/a → let @<변수명>='ctrl+r ctrl+r <마지막 사용 매크로 문자>' → wq! 또는 x  
  <br>
  <br>
-[매크로를 활용하는 VimGolf 문제]<img width="1280" alt="vimgolf" src="https://user-images.githubusercontent.com/97013643/172024602-b0de6c84-70a7-4b9b-85f9-a18ace495641.png">
+[매크로를 활용하는 VimGolf 문제]<img width="1087" alt="vimgolf" src="https://user-images.githubusercontent.com/97013643/172036185-e692dd6d-cba8-4f05-a418-2047a7495424.png">
 
 ***Keystrokes를 기준으로 VimGolf 문제에 대한 설명이며 굵게 표시된 부분들이 매크로를 활용하는 명령행이다***
  <br>
